@@ -348,13 +348,13 @@ class GroundingDINO(nn.Module):
         )
         out = {"pred_logits": outputs_class[-1], "pred_boxes": outputs_coord_list[-1]}
 
-        # # for intermediate outputs
+        # # for intermediate outputs_oldest
         # if self.aux_loss:
         #     out['aux_outputs'] = self._set_aux_loss(outputs_class, outputs_coord_list)
 
         # # for encoder output
         # if hs_enc is not None:
-        #     # prepare intermediate outputs
+        #     # prepare intermediate outputs_oldest
         #     interm_coord = ref_enc[-1]
         #     interm_class = self.transformer.enc_out_class_embed(hs_enc[-1], text_dict)
         #     out['interm_outputs'] = {'pred_logits': interm_class, 'pred_boxes': interm_coord}

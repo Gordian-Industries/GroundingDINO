@@ -13,7 +13,7 @@ from timm.models.layers import DropPath
 
 class FeatureResizer(nn.Module):
     """
-    This class takes as input a set of embeddings of dimension C1 and outputs a set of
+    This class takes as input a set of embeddings of dimension C1 and outputs_oldest a set of
     embedding of dimension C2, after a linear transformation, dropout and normalization (LN).
     """
 

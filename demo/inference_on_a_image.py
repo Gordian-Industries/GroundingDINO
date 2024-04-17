@@ -156,7 +156,7 @@ if __name__ == "__main__":
     parser.add_argument("--image_path", "-i", type=str, required=True, help="path to image file")
     parser.add_argument("--text_prompt", "-t", type=str, required=True, help="text prompt")
     parser.add_argument(
-        "--output_dir", "-o", type=str, default="outputs", required=True, help="output directory"
+        "--output_dir", "-o", type=str, default="outputs_oldest", required=True, help="output directory"
     )
 
     parser.add_argument("--box_threshold", type=float, default=0.3, help="box threshold")

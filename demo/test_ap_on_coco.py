@@ -91,7 +91,7 @@ class PostProcessCocoGrounding(nn.Module):
     def forward(self, outputs, target_sizes, not_to_xyxy=False):
         """ Perform the computation
         Parameters:
-            outputs: raw outputs of the model
+            outputs: raw outputs_oldest of the model
             target_sizes: tensor of dimension [batch_size x 2] containing the size of each images of the batch
                           For evaluation, this must be the original image size (before any data augmentation)
                           For visualization, this should be the image size after data augment, but before padding
