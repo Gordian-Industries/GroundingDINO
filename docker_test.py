@@ -1,6 +1,5 @@
-from groundingdino.util.inference import load_model, load_image, predict, annotate
+from src.groundingdino.groundingdino.util.inference import load_model
 import torch
-import cv2
 
 model = load_model("groundingdino/config/GroundingDINO_SwinT_OGC.pyy", "weights/groundingdino_swint_ogc.pth")
 model = model.to('cuda:0')
